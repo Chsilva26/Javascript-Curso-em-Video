@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Virifique sua nacionalidade</h1>
+    Onde vc Nasceu:<input type="text" name="sgla" id="sgla">
+    <input type="button" value="Verificar" onclick="verif()">
+    <div id="res">
+
+    </div>
+</body>
+    <script>
+        function verif(){
+            var sgl = window.document.querySelector('input#sgla')
+            var res = window.document.querySelector('div#res')
+            var sigla = sgl.value
+            res.innerHTML = `<p>Nasceu em <strong>${sigla} </strong> </p>`
+            if (sigla == 'BRA') {
+                res.innerHTML += `<p>Você é Brasileiro!`
+            }else{
+                res.innerHTML += `<p>Você é Estrangeiro!`
+            }
+        }
+
+    </script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Tester</title>
+    <style>
+        body {
+            background-color: rgb(245, 152, 152);
+            font: normal 40 pt Arial rgb(223, 220, 220)
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste seu Nome!</h1>
+
+    <script>
+        var sal = Number.parseFloat('Digite seu salario')
+        var nome = prompt('Qual o seu nome: ')
+        document.write(`Olá, <Strong>${nome}</Strong>. Seu nome tem ${nome.length} Letras.<br/>`)
+        document.write(`O seu nome em maiusculas é: ${nome.toUpperCase()}<br/>`)
+        document.write(`O seu nome em minusculas é: ${nome.toLowerCase()}<br/>`)
+        //document.write('pt-BR', {style:'currency', currency: 'BRL'})//
+    </script>
+</body>
+</html>
